@@ -1,12 +1,10 @@
-//
-//  header.h
-//  Activity28
-//
-//  Created by Chatchapong Thuaypha on 11/6/24.
-//
+#ifndef HEADER_H
+#define HEADER_H
 
-#ifndef header_h
-#define header_h
+#include <string>
 
+namespace DoubleToStringConverter {
+    std::string doubleToString(double number, int precision);
+}
 
-#endif /* header_h */
+#endif

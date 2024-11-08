@@ -1,14 +1,13 @@
-//
-//  main.cpp
-//  Activity28
-//
-//  Created by Chatchapong Thuaypha on 11/6/24.
-//
-
 #include <iostream>
+#include "header.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+using namespace DoubleToStringConverter;
+
+int main() {
+    
+    double number = 12345.6789;
+    string str = doubleToString(number, 1); // Set precision = 1 digit
+    cout << str << endl; // Outputs: 12345.7 (rounded up)
     return 0;
 }
